@@ -16,6 +16,7 @@ function Home() {
         const data = response.data;
         setPokemonData(data); // type json object
         console.log("response", response); // what does it look like?
+        console.log("Data", Data);
       })
       .catch(function(error) {
         console.warn(error);
