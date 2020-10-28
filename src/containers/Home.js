@@ -44,7 +44,14 @@ function Home() {
       <p className="blurb">{betterPokemonData.blurb}</p>
       <h3 className="content">Pokemon Id: {pokemonData.id}</h3>
       <h4 className="content">Pokemon Height: {pokemonData.height}</h4>
-      <h5 className="content">Pokemon Weight: {pokemonData.weight}</h5>
+      <h5
+        className="content"
+        style={{
+          backgroundColor: `rgba(100,210,140,${pokemonData.weight / 200})`
+        }}
+      >
+        Pokemon Weight: {pokemonData.weight}
+      </h5>
       <div className="attributes">
         {pokemonData.abilities &&
           pokemonData.abilities.map((a, i) => (
