@@ -64,7 +64,7 @@ function Home() {
         {pokemonData.held_items &&
           pokemonData.held_items.map((h, i) => (
             <div key={i}>
-              <a src={h.item}>Pokemon Items:{h.item.name}</a>
+              <a src={h.item}>Pokemon Held Items:{h.item.name}</a>
             </div>
           ))}
       </div>
