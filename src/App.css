@@ -57,3 +57,13 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
+.item {
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 0;
+  margin-top: 15px;
+  color: goldenrod;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

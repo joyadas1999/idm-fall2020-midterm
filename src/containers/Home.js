@@ -60,6 +60,14 @@ function Home() {
             </div>
           ))}
       </div>
+      <div className="item">
+        {pokemonData.held_items &&
+          pokemonData.held_items.map((h, i) => (
+            <div key={i}>
+              <a src={h.item}>Pokemon Items:{h.item.name}</a>
+            </div>
+          ))}
+      </div>
       {Data.map((d, i) => (
         <div>{d.id}</div>
       ))}
