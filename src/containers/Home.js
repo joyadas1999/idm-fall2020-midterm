@@ -68,6 +68,7 @@ function Home() {
             </div>
           ))}
       </div>
+
       {Data.map((d, i) => (
         <div>{d.id}</div>
       ))}
