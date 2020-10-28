@@ -8,7 +8,7 @@ function Home() {
   const [pokemonData, setPokemonData] = useState({}); // type array
   const [betterPokemonData, setBetterPokemonData] = useState({});
   // const [pokemonType, setPokemonType] = useState("");
-  const pokename = ["skitty", "pikachu", "ditto"];
+  const pokename = ["skitty", "pikachu", "ditto", "squirtle"];
   useEffect(() => {
     axios
       .get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
@@ -27,28 +27,32 @@ function Home() {
   }, [pokemon]);
   return (
     <div>
-      <h1>Pokemon</h1>
-      <nav>
+      <h1 className="header">Pokemon</h1>
+      <nav className="nav">
         {pokename.map((name, i) => (
           <div key={i} onClick={() => setPokemon(name)}>
             {name}
           </div>
         ))}
       </nav>
-      {betterPokemonData.image && (
-        <img src={betterPokemonData.image.url} alt="" />
-      )}
-      <h2>Pokemon Name: {pokemonData.name}</h2>
-      <p>{betterPokemonData.blurb}</p>
-      <h3>Pokemon Id: {pokemonData.id}</h3>
-      <h4>Pokemon Height: {pokemonData.height}</h4>
-      <h5>Pokemon Weight: {pokemonData.weight}</h5>
-      {pokemonData.abilities &&
-        pokemonData.abilities.map((a, i) => (
-          <div key={i}>
-            <a href={a.ability.url}>{a.ability.name}</a>
-          </div>
-        ))}
+      <div className="img">
+        {betterPokemonData.image && (
+          <img src={betterPokemonData.image.url} alt="" />
+        )}
+      </div>
+      <h2 className="header1">Pokemon Name:{pokemonData.name}</h2>
+      <p className="blurb">{betterPokemonData.blurb}</p>
+      <h3 className="content">Pokemon Id: {pokemonData.id}</h3>
+      <h4 className="content">Pokemon Height: {pokemonData.height}</h4>
+      <h5 className="content">Pokemon Weight: {pokemonData.weight}</h5>
+      <div className="attributes">
+        {pokemonData.abilities &&
+          pokemonData.abilities.map((a, i) => (
+            <div key={i}>
+              <a src={a.ability}>Pokemon Ability:{a.ability.name}</a>
+            </div>
+          ))}
+      </div>
       {Data.map((d, i) => (
         <div>{d.id}</div>
       ))}

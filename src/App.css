@@ -1,2 +1,59 @@
-.App {
+.header {
+  text-align: center;
+  color: blue;
+  font-family: fantasy;
+  font-size: 44px;
+}
+
+.nav {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 25px;
+  color: purple;
+}
+
+.img {
+  text-align: center;
+}
+
+.header1 {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 0;
+  margin-bottom: 15px;
+  color: blue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.blurb {
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 0;
+  color: orange;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.content {
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: orangered;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.attributes {
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: olivedrab;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }

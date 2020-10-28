@@ -27,6 +27,16 @@ const Data = [
         "https://www.futuregamereleases.com/wp-content/uploads/2020/05/pokemon-go-how-to-catch-ditto.png",
       alt: "A placeholder image"
     }
+  },
+  {
+    id: "squirtle",
+    blurb:
+      "Squirtle is a small, light-blue Pokémon with an appearance similar to a turtle. With its aerodynamic shape and grooved surface, Squirtle's shell helps it wade through the water very quickly. It also offers protection in battle. Like turtles, Squirtle has a shell that covers its body with holes that allow its limbs, tail, and head to be exposed. Unlike a turtle, Squirtle is ordinarily bipedal. ",
+    image: {
+      url:
+        "https://i.pinimg.com/originals/0e/32/e3/0e32e3ef326b04ca6495aef049bf1f91.jpg",
+      alt: "A placeholder image"
+    }
   }
 ];
 
